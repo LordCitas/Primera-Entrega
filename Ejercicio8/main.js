@@ -1,4 +1,4 @@
-let mesas = [], numMesas, numClientes, continuar = true, encontrada;
+let mesas = [], numMesas, numClientes = 0, continuar = true, encontrada;
 
 numMesas = parseInt(prompt("Introduce la cantidad de mesas del restaurante: "));
 while (isNaN(numMesas) || numMesas <= 0){
@@ -19,7 +19,7 @@ while(continuar){
         numClientes = parseInt(prompt(`Lo siento, no admitimos grupos de ${numClientes}, haga grupos de 4 personas como máximo e intente de nuevo`));
     }
 
-    if(numCLientes < 1){
+    if(numClientes < 1){
         continuar = false;
     }else{
         document.writeln(`El usuario pide una mesa para ${numClientes}<br>`);
